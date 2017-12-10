@@ -1,0 +1,52 @@
+body {
+	margin: 0 auto;
+	padding: 0;
+	clear: both;
+	height: 734px;
+}
+
+#ground {
+	width: 100%;
+	height: 100%;
+	background: url(../img/background.jpg);
+	background-color: rgb(255, 255, 255);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#mask {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.5);
+	z-index: 1;
+}
+
+#main {
+	position: absolute;
+	z-index: 2;
+	border: 1px solid rgb(179, 179, 179);
+	border-radius: 10px;
+	box-shadow: inset 0 0px 20px rgba(200, 200, 200, 0.2);
+	width: 500px;
+	height: 300px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+p {
+	text-align: left;
+	font-weight: bold;
+}
+
+label {
+	font-weight: normal;
+}

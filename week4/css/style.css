@@ -1,0 +1,72 @@
+h1,
+span,
+#main>div,
+#main,
+#calculator,
+#plate {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+#calculator,
+span > #text {
+	margin-right: 17px;
+}
+
+#text {
+	width: 360px;
+	height: 40px;
+	margin-left: 20px;
+	margin-top: 10px;
+	background-color: #A8A8A8;
+	box-shadow: 0 4px #000000;
+	text-align: right;
+	letter-spacing: 1px;
+	color: black;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+#plate {
+	width: 430px;
+	height: 500px;
+	border-radius: 5%;
+	font-size: 25px;
+	font-weight: bold;
+	background-color: #32322F;
+}
+
+button {
+	width: 70px;
+	height: 60px;
+	font-size: 35px;
+	border-radius: 10%;
+	margin: 10px 0 10px 20px;
+	background-color: #A8A8A8;
+	outline: none;
+	transition: all 0.2s ease;
+}
+
+#equal {
+	color: black;
+	background-color: #FF6633;
+}
+
+#equal:hover {
+	background-color: white;
+}
+
+button:hover {
+	background-color: white;
+}
+
+span > #history {
+	width: 420px;
+	height: 90px;
+	margin-top: 20px;
+	background-color: #A8A8A8;
+	font-weight: bold;
+	font-size: 20px;
+}

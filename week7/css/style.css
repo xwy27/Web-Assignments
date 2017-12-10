@@ -1,0 +1,235 @@
+body {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: lightyellow;
+}
+
+h1 {
+	height: 20px;
+	margin-left: 35px;
+}
+
+div>p {
+	font-weight: bold;
+}
+
+#timeBar {
+	background-color: orange;
+	position: relative;
+	top: -35px;
+	left: 25px;
+	width: 350px;
+	height: 20px;
+	border-radius: 10px;
+}
+
+#puzzle {
+	position: relative;
+	/*border: 1px gray solid;*/
+	width: 357px;
+	height: 357px;
+	background-size: 100% 100%;
+}
+
+#origin {
+	/*border: 1px gray solid;*/
+	margin-left: -100px;
+	margin-top: -260px;
+	margin-bottom: 180px;
+	width: 100px;
+	height: 100px;
+	background-size: 100% 100%;
+	background-image: url("../imag/origin.JPG");
+}
+
+.block {
+	position: absolute;
+	margin-bottom: -3px;
+	margin-left: 20px;
+	width: 88px;
+	height: 88px;
+	border: 1.5px gray solid;
+	background-image: url("../imag/origin.JPG");
+	transition: all 0.2s ease-out;
+}
+
+.white {
+	opacity: 0;
+}
+
+.block:hover {
+	cursor: pointer;
+	transform: scale(1.1, 1.1);
+	z-index: 1;
+}
+
+#block1 {
+	background-position: 0% 0%;
+}
+
+#block2 {
+	background-position: 33.33% 0%;
+}
+
+#block3 {
+	background-position: 66.66% 0%;
+}
+
+#block4 {
+	background-position: 99.99% 0%;
+}
+
+#block5 {
+	background-position: 0% 33.33%;
+}
+
+#block6 {
+	background-position: 33.33% 33.33%;
+}
+
+#block7 {
+	background-position: 66.66% 33.33%;
+}
+
+#block8 {
+	background-position: 99.99% 33.33%;
+}
+
+#block9 {
+	background-position: 0% 66.66%;
+}
+
+#block10 {
+	background-position: 33.33% 66.66%;
+}
+
+#block11 {
+	background-position: 66.66% 66.66%;
+}
+
+#block12 {
+	background-position: 99.99% 66.66%;
+}
+
+#block13 {
+	background-position: 0% 99.99%;
+}
+
+#block14 {
+	background-position: 33.33% 99.99%;
+}
+
+#block15 {
+	background-position: 66.66% 99.99%;
+}
+
+#block16 {
+	background-position: 99.99% 99.99%;
+}
+
+#puzzle>.pos1-1 {
+	top: 0%;
+	left: 0%;
+}
+
+#puzzle>.pos1-2 {
+	top: 0%;
+	left: 25%;
+}
+
+#puzzle>.pos1-3 {
+	top: 0%;
+	left: 50%;
+}
+
+#puzzle>.pos1-4 {
+	top: 0%;
+	left: 75%;
+}
+
+#puzzle>.pos2-1 {
+	top: 25%;
+	left: 0%;
+}
+
+#puzzle>.pos2-2 {
+	top: 25%;
+	left: 25%;
+}
+
+#puzzle>.pos2-3 {
+	top: 25%;
+	left: 50%;
+}
+
+#puzzle>.pos2-4 {
+	top: 25%;
+	left: 75%;
+}
+
+#puzzle>.pos3-1 {
+	top: 50%;
+	left: 0%;
+}
+
+#puzzle>.pos3-2 {
+	top: 50%;
+	left: 25%;
+}
+
+#puzzle>.pos3-3 {
+	top: 50%;
+	left: 50%;
+}
+
+#puzzle>.pos3-4 {
+	top: 50%;
+	left: 75%;
+}
+
+#puzzle>.pos4-1 {
+	top: 75%;
+	left: 0%;
+}
+
+#puzzle>.pos4-2 {
+	top: 75%;
+	left: 25%;
+}
+
+#puzzle>.pos4-3 {
+	top: 75%;
+	left: 50%;
+}
+
+#puzzle>.pos4-4 {
+	top: 75%;
+	left: 75%;
+}
+
+button {
+	margin-left: 20px;
+	width: 230px;
+	height: 50px;
+	text-align: center;
+	font-size: 18pt;
+	font-family: sans-serif;
+	border-radius: 20%;
+	border: 1px gray solid;
+	box-shadow: 0 0 1px 1px black;
+	background-color: lightyellow;
+	outline: none;
+}
+
+#reset {
+	margin-top: 15px;
+}
+
+button:hover {
+	width: 232px;
+	height: 52px;
+	background-color: orange;
+}
