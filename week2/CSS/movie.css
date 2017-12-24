@@ -1,0 +1,136 @@
+p {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 8pt;
+	font-family: "Verdana", "Tahoma", "sans-serif";
+	background: url(http://my.ss.sysu.edu.cn/wiki/download/attachments/7045968/background.png?version=1&modificationDate=1268896312000);
+}
+
+#banner {
+	text-align: center;
+	background: url(http://my.ss.sysu.edu.cn/wiki/download/attachments/7045968/bannerbackground.png?version=1&modificationDate=1268896312000);
+	background-repeat: repeat-x;
+	height: 50px;
+}
+
+h1 {
+	font-size: 24pt;
+	font-weight: bold;
+	text-align: center;
+	font-family: "Tahoma", "Verdana", "sans-serif";
+}
+
+#all {
+	width: 800px;
+	margin: 0 auto;
+	border: solid gray 4px;
+}
+
+#left_side {
+	width: 550px;
+}
+
+#rightside {
+	width: 250px;
+	float: right;
+}
+
+#title {
+	background: url(http://my.ss.sysu.edu.cn/wiki/download/attachments/7045968/rottenbackground.png?version=1&modificationDate=1268896385000);
+	background-repeat: repeat-x;
+	height: 83px;
+}
+
+#title img {
+	float: left;
+}
+
+#title > div {
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+	font-size: 8pt;
+	color: white;
+}
+
+#title > div > span {
+	font-size: 48pt;
+	color: red;
+	font-weight: bold;
+}
+
+
+.img {
+	line-height: 0;
+}
+
+#rightside #list {
+	padding: 10px;
+	font-size: 8pt;
+	font-family: "Arial", "sans-serif";
+	background-color: #A2B964;
+}
+
+#rightside dl {
+	margin-top: 3px;
+}
+
+#rightside dt {
+	font-weight: bold;
+}
+
+#rightside dd {
+	margin-bottom: 1em;
+}
+
+#left_review, #right_review {
+	width: 47%;
+	margin: 2% 0 2% 2%;
+	float: left;
+}
+
+.wrap {
+	margin-bottom: 3em;
+	overflow: hidden;
+}
+
+.comments {
+	background-color: #E1D697;
+	padding: 8px;
+	border: gray 2px solid;
+	margin-bottom: 1em;
+	overflow: hidden;
+}
+
+.comments > q {
+	font-size: 8pt;
+	font-weight: bold;
+	word-break: keep-all;
+}
+
+#review img {
+	padding-right: 5px;
+	float: left;
+}
+
+.user span {
+	font-style: italic;
+}
+
+#foot {
+	padding: 5px;
+	background-color: #A2B964;
+	text-align: center;
+	clear: both;
+}
+
+#CSS {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+}
