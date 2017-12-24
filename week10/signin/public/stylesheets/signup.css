@@ -1,0 +1,113 @@
+body {
+	margin: 0 auto;
+	padding: 0;
+	clear: both;
+	height: 734px;
+}
+
+#ground {
+	width: 100%;
+	height: 100%;
+	background: url(../images/background.jpg);
+	background-color: rgb(255, 255, 255);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#mask {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.5);
+	z-index: 1;
+}
+
+#main {
+	z-index: 2;
+	position: absolute;
+	width: 500px;
+	height: 650px;
+	border: 1px solid gray;
+	border-radius: 10px;
+	box-shadow: inset 0 0px 50px rgba(200, 200, 200, 0.2);
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+p {
+	font-weight: bold;
+	margin-top: -5px;
+}
+
+input {
+	outline: none;
+	border: 1px solid rgb(179, 179, 179);
+	border-radius: 5px;
+	box-shadow: inset 0 0px 20px rgba(127, 127, 127, 0.2);
+	background-color: white;
+}
+
+.confirm {
+	margin-left: -32px;
+}
+
+.hint {
+	margin-top: -5px;
+	margin-left: 110px;
+	font-size: 8pt;
+	font-weight: normal;
+	text-align: left;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.error {
+	border: 1.5px solid red;
+}
+
+button {
+	width: 60px;
+	height: 30px;
+	display: inline-block;
+	outline: none;
+	border-radius: 20px;
+	border: 1px solid rgb(235, 177, 136);
+	box-shadow: none;
+	box-sizing: border-box;
+	background-color: rgb(235, 177, 200);
+	font-size: 15px;
+	color: white;
+}
+
+#reset {
+	margin-left: 35px;
+}
+
+#back {
+	width: 120px;
+	margin-left: 35px;
+	margin-top: 5px;
+}
+
+#ERROR {
+	text-align: center;
+	width: 200px;
+	height: 10px;
+	margin-left: 90px;
+	font-size: 8pt;
+}
+
+.errorMsg {
+	color: red;
+	text-align: center;
+	margin-left: 40px;
+	margin-bottom: 10px;
+	font-size: 8pt;
+}

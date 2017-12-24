@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/stylesheets/login.css" />
+    <title><%= title %></title>
+  </head>
+  <body>
+      <div id="ground">
+          <div id="mask"></div>
+      
+          <div id="main">
+            <h1><%= title%></h1>
+      
+            <div id="loginTable">
+              <form action="http://localhost:8000/" method="post" id="formLogin">
+                <div>
+                  <p>用户
+                    <input id="username" type="text" name="username">
+                  </p>
+                </div>
+                <div>
+                  <p>密码
+                    <input id="password" type="password" name="password">
+                  </p>
+                </div>
+
+                <div id="message"><%= err%></div>
+                
+                <button type="login" id="login">登陆</button>
+              </form>
+              <button type="signup" id="signup">注册</button>
+            </div>
+          </div>
+      
+          <script type="text/javascript" src="/javascripts/jQuery.js"></script>
+          <script type="text/javascript" src="/javascripts/jquery-form.js"></script>
+          <script type="text/javascript" src="/javascripts/login.js"></script>
+        </div>
+      
+    
+  </body>
+</html>

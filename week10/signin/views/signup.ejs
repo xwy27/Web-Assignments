@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/stylesheets/signup.css" />
+    <title><%= title %></title>
+  </head>
+  <body>
+      <div id="ground">
+          <div id="mask"></div>
+      
+          <div id="main">
+            <h1><%= title%></h1>
+      
+            <div id="registerTable">
+              <form action="http://localhost:8000/regist" method="post" onsubmit="return check()" id="formSignUp">
+                <div>
+                  <p>用户
+                    <input id="username" type="text" name="username">
+                  </p>
+                  <p class="hint">*用户名为6~18位英文字母、数字或下划线
+                    <br>*必须以英文字母开头</p>
+                </div>
+                <div>
+                  <p>密码
+                    <input id="password" type="password" name="password">
+                  </p>
+                  <p class="hint">*密码为6~12位英文字母、数字、中划线或下划线
+                  </p>
+                </div>
+                <div>
+                  <p class="confirm">确认密码
+                    <input id="confirmpsd" type="password" name="confirmpsd">
+                  </p>
+                </div>
+                <div>
+                  <p>学号
+                    <input id="studentId" type="text" name="studentId">
+                  </p>
+                  <p class="hint">*学号为8位数字
+                    <br>*不能以0开头</p>
+                </div>
+                <div>
+                  <p>电话
+                    <input id="tel" type="text" name="tel">
+                  </p>
+                  <p class="hint">*电话号码为11位数字
+                    <br>*不能以0开头</p>
+                </div>
+                <div>
+                  <p>邮箱
+                    <input id="mailBox" type="text" name="mailBox">
+                  </p>
+                  <p class="hint">*邮箱格式为xxx@xx.com</p>
+                </div>
+
+                <div id="ERROR" class="errorMsg"><%= error%></div>
+                <div id="error" class="errorMsg">right</div>
+      
+                <button type="reset" id="reset">重置</button>
+                <button type="submit" id="submit">提交</button>
+              </form>
+              <button type="back" id="back">返回</button>
+            </div>
+          </div>
+      
+          <script type="text/javascript" src="/javascripts/jQuery.js"></script>
+          <script type="text/javascript" src="/javascripts/signUp.js"></script>
+          <script type="text/javascript" src="/javascripts/jquery-form.js"></script>
+        </div>
+      
+    
+  </body>
+</html>

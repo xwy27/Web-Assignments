@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/stylesheets/detail.css">
+	<title><%= title %></title>
+</head>
+
+<body>
+	<div id="ground">
+		<div id="mask"></div>
+
+		<div id="main">
+			<h1><%= title %></h1>
+
+			<div id="infoTable">
+				<div>
+					<p>昵称:
+						<label name="username"><%= user.username %></label>
+					</p>
+				</div>
+				<div>
+					<p>学号:
+						<label name="studentId"><%= user.studentId %></label>
+					</p>
+				</div>
+				<div>
+					<p>电话:
+						<label name="tel"><%= user.tel %></label>
+					</p>
+				</div>
+				<div>
+					<p>邮箱:
+						<label name="mailBox"><%= user.mailBox %></label>
+					</p>
+				</div>
+				<div>
+					<button type="logout" id="logout">登出</button>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="/javascripts/jquery.js"></script>
+		<script type="text/javascript" src="/javascripts/detail.js"></script>
+	</div>
+</body>
+
+</html>
