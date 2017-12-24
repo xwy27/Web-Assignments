@@ -1,0 +1,163 @@
+body,
+#info {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	height: 650px;
+	cursor: default;
+}
+
+#rule,
+#result {
+	margin-top: -15px;
+}
+
+#maze {
+	width: 560px;
+	height: 330px;
+	cursor: pointer;
+	margin-top: -25px;
+}
+
+#maze .outer {
+	opacity: 0;
+	background-color: red;
+	cursor: default;
+}
+
+#maze .block {
+	border: 1px solid black;
+	cursor: default;
+	background-color: #EEEEEE;
+}
+
+#maze .blockChanged {
+	border: 1px solid black;
+	cursor: default;
+	background-color: red;
+}
+
+#maze #block1 {
+	position: relative;
+	top: -311px;
+	left: 40px;
+	width: 140px;
+	height: 230px;
+}
+
+#maze #block2 {
+	position: relative;
+	left: 181px;
+	top: -775px;
+	width: 200px;
+	height: 60px;
+	border-right: none;
+	border-left: none;
+}
+
+#maze #block3 {
+	position: relative;
+	top: -543px;
+	left: 380px;
+	width: 140px;
+	height: 230px;
+}
+
+#maze #block4 {
+	position: relative;
+	top: -906px;
+	left: 225px;
+	width: 110px;
+	height: 180px;
+	border-bottom: none;
+}
+
+#maze #block5 {
+	position: relative;
+	top: -682px;
+	left: 40px;
+	width: 480px;
+	height: 42px;
+}
+
+#maze #cheat {
+	position: relative;
+	top: -1195px;
+	left: 520px;
+	width: 40px;
+	height: 315px;
+	opacity: 0;
+	background-color: red;
+}
+
+#start {
+	position: relative;
+	top: -617px;
+	left: 40px;
+	width: 35px;
+	height: 33px;
+	background-color: lightgreen;
+	font-weight: bold;
+	font-size: 18px;
+	border: 1px solid black;
+	text-align: center;
+}
+
+#end {
+	position: relative;
+	top: -670px;
+	left: 485px;
+	width: 35px;
+	height: 33px;
+	background-color: rgb(136, 107, 230);
+	font-weight: bold;
+	font-size: 18px;
+	border: 1px solid black;
+	text-align: center;
+	cursor: default;
+}
+
+#maze #outLeft {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 40px;
+	height: 315px;
+}
+
+#maze #outBottom {
+	position: relative;
+	top: -1195px;
+	left: 0px;
+	width: 560px;
+	height: 20px;
+}
+
+#maze #outTop {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 560px;
+	height: 20px;
+}
+
+#info,
+pre {
+	font-family: "Verdana", "Tahoma", "sans-serif";
+	font-size: 12pt;
+	letter-spacing: 0.01px;
+	margin-top: -2px;
+}
+
+#example {
+	width: 101px;
+	height: 26px;
+	margin-top: -20px;
+	background-color: #EEEEEE;
+	border: 1.5px solid black;
+}
+
+#example+p {
+	margin-left: -426px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="shortcut icon" type="image/gif" href="../imag/icon.jpg">
+	<script type="text/javascript" src="../js/mole.js"></script>
+	<title>maze</title>
+</head>
+
+<body>
+	<h1>Whac-a-mole</h1>
+	<p>Test your skill.How many boxex(moles) can you check(hit) in 30 seconds?</p>
+
+	<p>
+		<button id="start">Start Game | Stop Game</button>
+		<span id="blank1"></span>Time:
+		<input id="time" type="text" name="time" readonly="readonly">
+	</p>
+
+	<p>
+		<input id="GameState" type="text" name="GameState" readonly="readonly" value="Press Start to Play">
+		<span id="blank2"></span>
+		Score:
+		<input id="score" type="text" name="score" readonly="readonly">
+	</p>
+
+	<div id="plate">
+		<div id="row1"></div>
+		<div id="row2"></div>
+		<div id="row3"></div>
+		<div id="row4"></div>
+		<div id="row5"></div>
+		<div id="row6"></div>
+	</div>
+	<p id="Instruction">Instructions:</p>
+	<pre>
+1. Click on the radio buttons(moles) as they are seleted randomly by the computer.
+2. 1 point per hit, minus 1 point per miss.
+</pre>
+</body>
+
+</html>
