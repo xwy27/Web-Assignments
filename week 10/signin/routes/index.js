@@ -5,10 +5,18 @@ var bcrypt = require('bcrypt-as-promised');
 
 //login page
 router.get('/', function (req, res, next) {
-	res.render('login', {
-		title: '登录',
-		err: ''
-	});
+	if (req.session.user) {
+		console.log("LOGIN:\n   user: " + req.session.user.username + "\n   STATE: Success");
+		res.render('detail', {
+			title: '用户详情',
+			user: req.session.user
+		});
+	} else {
+		res.render('login', {
+			title: '登录',
+			err: ''
+		});
+	}
 });
 
 //log in request
